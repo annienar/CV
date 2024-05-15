@@ -202,9 +202,9 @@
         grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
         justify-content: center; /* Centers the grid within the container */
         align-items: center; /* Vertically centers the items in each cell */
-        gap: 20px; /* Space between grid cells */
+        gap: 40px; /* Space between grid cells */
         width: 100%; /* Full width of the container */
-        max-width: 960px; /* Maximum width of the container */
+        max-width: 1200px; /* Maximum width of the container */
         margin: 0 auto; /* Centers the container horizontally */
         padding: 20px; /* Padding around the grid */
     }
