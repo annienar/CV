@@ -99,6 +99,18 @@ nav {
     background-color: #EBECEE;
 }
 
+/* Body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+
+}
 
 /* Nav */
 
@@ -144,6 +156,16 @@ nav {
 .heroImage {
     border-radius: 24px;
     align-items: center;
+    border: 20px;
+    color: white;
+}
+
+.heroImage img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 24px solid white;
+    box-sizing: border-box; /* Ensures the border is inside the image */
 }
 
 /* About Me */
@@ -188,16 +210,6 @@ nav {
     box-shadow: 0px 4px 8px 0px rgba(33, 33, 33, 0.2);
 }
 
-/* Body */
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
 
 .content-text {
     display: flex;
@@ -282,4 +294,31 @@ hr {
     border: none; /* Remove default border */
     height: 0.5px; /* Set desired height */
     background-color: #e2e3e4; /* Set desired color */
+}
+
+
+background: linear-gradient(180deg, #b19cd9 0%, #ffffff 100%); /* Purple to white gradient */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh; /* Adjust height as needed */
+    background: url('path/to/your/wave-image.png') no-repeat top; /* Add wave image */
+    background-size: cover;
+}
+
+.gradient-texture {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(177, 156, 217, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-blend-mode: multiply;
 }
