@@ -3,8 +3,9 @@
 html {
     font-size: 16px;
 }
+
 h1 {
-    font-family: 'Yeneva-One', 'Times New Roman', Times, serif;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 3.5em;
     font-weight: 600;
     line-height: 1em;
@@ -12,14 +13,16 @@ h1 {
     margin-top: 0px;
     color: #40485E;
 }
+
 h2 {
-    font-family: 'Yeneva-One', 'Times New Roman', Times, serif;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 2em;
     font-weight: 600;
     line-height: 1.1em;
     margin-bottom: 0px;
     margin-top: 0px;
 }
+
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -27,8 +30,9 @@ h3 {
     margin-bottom: 0em;
     color: #975ADA;
 }
+
 h4 {
-    font-family: 'Yeneva-One', 'Times New Roman', Times, serif;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-size: 1.2em;
     font-weight: 600;
     line-height: 1em;
@@ -91,43 +95,44 @@ a:active {
 }
 
 nav {
+    width: 100%;
     background-color: #EBECEE;
-}
-
-.body {
-    background-color: #ECEDEF;
-}
-
-hr {
-
 }
 
 
 /* Nav */
 
-
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 12px;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #EBECEE; /* Ensure background color spans full width */
+}
 
 .navBar-nav {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 .navBar-nav li {
-    padding: 5px 10px;
-    display: flex;
-    flex-direction: row;
+    display: inline; /* Ensure list items are displayed inline */
+    margin-right: 8px; /* Space between list items */
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    padding: 24px;
-    width: 1200px;
+.navBar-nav li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.navBar-nav a {
+    text-decoration: none;
+    color: #40485E;
+    padding: 5px 8px; /* Add padding inside the links */
+    display: inline-block;
 }
 
 .navbar-brand img {
@@ -220,24 +225,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px auto;
+    padding: 40px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.footer {
-    margin-bottom: 0;
-    margin-top: 0;
+.footer-text p {
+    margin: 0px;
 }
+
+footer {
+    margin-top: 40px;
+}
+
 
 .footer-socials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 20px;
+    width: 100%; /* Ensure it takes full width */
 }
 
 footer {
-    margin-top: 40px;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .socials i {
@@ -261,4 +274,12 @@ img {
 
 .image-aboutMe {
     width: 50%;
+}
+
+/* HR */
+
+hr {
+    border: none; /* Remove default border */
+    height: 0.5px; /* Set desired height */
+    background-color: #e2e3e4; /* Set desired color */
 }
