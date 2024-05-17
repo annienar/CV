@@ -1,7 +1,7 @@
 /* Fonts Styles */
 
     html {
-        font-size: 16px;
+        font-size: 16px; /* Base font size */
     }
 
     h1 {
@@ -9,8 +9,8 @@
         font-size: 3.5em;
         font-weight: 600;
         line-height: 1em;
-        margin-bottom: 0.1em;
-        margin-top: 0px;
+        margin-bottom: 0.1em; /* 1.6px equivalent */
+        margin-top: 0;
         color: #40485E;
     }
 
@@ -19,15 +19,15 @@
         font-size: 2em;
         font-weight: 600;
         line-height: 1.1em;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     h3 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 1.25em;
-        margin-bottom: 0em;
+        margin-bottom: 0;
         color: #975ADA;
     }
 
@@ -36,8 +36,8 @@
         font-size: 1.2em;
         font-weight: 600;
         line-height: 1em;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0;
+        margin-top: 0;
         color: #40485E;
     }
 
@@ -45,12 +45,12 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 0.8em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5em; /* 8px equivalent */
         color: #975ADA;
     }
 
     h5 i {
-        margin-right: 8px;
+        margin-right: 0.5em; /* 8px equivalent */
     }
 
     p {
@@ -61,7 +61,7 @@
 
     .card p {
         font-size: 0.8em;
-        margin: 1em 0 0 0;
+        margin: 1em 0 0 0; /* 16px equivalent */
     }
 
     a {
@@ -72,20 +72,14 @@
     }
 
     a:hover {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1em;
-        color: #40485E;
-        text-decoration: underline;
         color: #975ADA;
+        text-decoration: underline;
     }
 
     a:active {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1em;
         font-weight: 500;
-        color: #40485E;
-        text-decoration: underline;
         color: #6325A7;
+        text-decoration: underline;
     }
 
 /* Color Styles */
@@ -109,19 +103,16 @@
         min-height: 100vh;
         margin: 0;
         background-color: #f3f3f3;
-
     }
 
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding: 0px 100px;
-        max-width: 1200px;
-        box-sizing: border-box;
-    }
-
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em; /* 20px equivalent */
+    padding: 0 5em; /* 0px 80px equivalent */
+    max-width: 75em; /* 1200px equivalent */
+    box-sizing: border-box;
+}
 
 /* Nav */
 
@@ -129,10 +120,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 24px 12px;
-        width: 100%; /* Ensure it takes full width */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        background-color: #EBECEE; /* Ensure background color spans full width */
+        padding: 1.5em 1.5em 0.75em; /* 24px 24px 12px equivalent */
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #EBECEE;
     }
 
     .navBar-nav {
@@ -143,94 +134,263 @@
     }
 
     .navBar-nav li {
-        display: inline; /* Ensure list items are displayed inline */
-        margin-right: 8px; /* Space between list items */
+        display: inline;
+        margin-right: 0.5em; /* 8px equivalent */
     }
 
     .navBar-nav li:last-child {
-        margin-right: 0; /* Remove margin from the last item */
+        margin-right: 0;
     }
 
     .navBar-nav a {
         text-decoration: none;
         color: #40485E;
-        padding: 5px 8px; /* Add padding inside the links */
+        padding: 0.3125em 0.5em; /* 5px 8px equivalent */
         display: inline-block;
     }
 
     .navbar-brand img {
-        width: 291px;
+        width: 18.1875em; /* 291px equivalent */
     }
 
-/* Hero */
+    /* Hero */
 
     .heroImage {
-        border-radius: 24px;
+        border-radius: 1.5em; /* 24px equivalent */
         align-items: center;
-        border: 20px;
+        border: 1.25em; /* 20px equivalent */
         color: white;
     }
 
     .heroImage img {
         max-width: 100%;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 24px solid white;
-        box-sizing: border-box; /* Ensures the border is inside the image */
+        border-radius: 0.9375em; /* 15px equivalent */
+        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* 0 4px 8px equivalent */
+        border: 1.5em solid white; /* 24px equivalent */
+        box-sizing: border-box;
     }
 
 /* About Me */
 
     .content-aboutMe {
-        margin-top: 40px;
+        margin-top: 2.5em; /* 40px equivalent */
     }
 
+    /* Labels */
+
+        .label {
+            display: flex;
+            align-items: center;
+            gap: 0.75em; /* 12px equivalent */
+            z-index: 1;
+            position: absolute;
+            padding: 1em 1.5em 1em 1em; /* 16px 24px 16px 16px equivalent */
+            border-radius: 2.5em; /* 40px equivalent */
+            background-color: white;
+            box-shadow: 0 0.25em 0.5em 0 rgba(33, 33, 33, 0.05); /* 0px 4px 8px equivalent */
+        }
+
+        .label i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            color: white;
+            width: 2.5em; /* 40px equivalent */
+            height: 2.5em; /* 40px equivalent */
+            background-color: #6325A7;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .label .label-text {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 0.375em; /* 6px equivalent */
+        }
+
+        .label-h3 {
+            margin: 0;
+            padding: 0;
+            color: #40485E;
+            font-weight: 600;
+            font-size: 1.25em;
+        }
+
+        .label-h4 {
+            margin: 0;
+            padding: 0;
+            padding-top: 0.2em;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+        }
+
+        /* Label Positions */
+
+            .label-1 {
+                top: 1%; /* 10px equivalent */
+                left: 0.625em; /* 10px equivalent */
+                transform: translate(-3%, -70%);
+            }
+
+            .label-2 {
+                top: 53%;
+                left: 3.125em; /* 50px equivalent */
+                transform: translate(55%, -50%);
+            }
+
+            .label-3 {
+                bottom: 0.625em; /* 10px equivalent */
+                right: 0.625em; /* 10px equivalent */
+            }
+
+            .label-3 i {
+                padding-top: 0.125em; /* 2px equivalent */
+            }
+
+    /* Images */
+
+        .image-1 {
+            width: 80%; /* 334.39px equivalent */
+            align-self: end;
+            justify-self: right;
+        }
+        
+        .image-2 {
+            width: 100%; /* 474.07px equivalent */
+            align-self: end;
+        }
+        
+        .image-3 {
+            width: 70%; /* 262.65px equivalent */
+            justify-self: right;
+        }
+        
+        .image-4 {
+            width: 85%; /* 373.07px equivalent */
+        }
+        
+        .image-5 {
+            width: 100%; /* 433.29px equivalent */
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+        
+        .image-6 {
+            width: 40%; /* 334.39px equivalent */
+            align-self: center;
+            justify-content: center;
+        }
+        
+        .image-7 {
+            width: 80%; /* 333.91px equivalent */
+            justify-self: right;
+            align-self: flex-end;
+        }
+        
+        .aboutMe-images {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em; /* 16px equivalent */
+            justify-content: center;
+            max-width: 33.4375em; /* 535px equivalent */
+            max-height: 1200px;
+        }
+     
+        .image-group-global {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em; /* 16px equivalent */
+            margin: 0;
+            padding: 0;
+        }
+
+        .aboutMe-images img {
+            display: block;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+            border-radius: 1em;
+        }
+        
+        /* Image groups */
+
+        .image-group-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+            grid-template-rows: auto auto; /* Two rows of automatic height */
+            gap: 1em; /* 16px equivalent */
+        }
+        
+        .image-group-2 {
+            display: flex;
+            flex-direction: grid;
+            gap: 1em;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-group-3 {
+            display: flex;
+            gap: 16px; 
+            flex-direction: column;
+        }
+
+    
 /* Portfolio */
 
     .content-portfolio .content-text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-self: center;
+        align-self: center;
         text-align: center;
-        width: 650px;
+        width: 750px; /* 650px equivalent */
         margin: 0 auto;
+        padding: 0;
     }
 
     .content-portfolio .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center; /* Centers the grid within the container */
         align-items: center; /* Vertically centers the items in each cell */
-        gap: 40px; /* Space between grid cells */
+        gap: 2em; /* 40px equivalent for space between grid cells */
         width: 100%; /* Full width of the container */
-        max-width: 1200px; /* Maximum width of the container */
+        max-width: 75em; /* 1200px equivalent for the maximum width of the container */
         margin: 0 auto; /* Centers the container horizontally */
-        padding: 20px; /* Padding around the grid */
+        padding: 40px 90px ; /* 40px equivalent for horizontal padding */
+        box-sizing: border-box;
     }
 
 /* Cards */
 
     .card {
         background-color: white;
-        border-radius: 24px;
-        display: flex;
+        border-radius: 1.5em; /* 24px equivalent */
+        flex: auto;
         flex-direction: column;
-        width: 80%;
-        padding: 32px;
-        box-shadow: 0px 4px 8px 0px rgba(33, 33, 33, 0.05);
+        width: 285px;
+        margin: 0;
+        padding: 2em; /* 32px equivalent */
+        box-shadow: 0 0.25em 0.5em rgba(33, 33, 33, 0.05); /* 0px 4px 8px equivalent */
     }
 
-
-    .content-text {
+    .card .content-text, .content-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 350px;
-        max-width: 600px;
-        margin-top: 2.5em;
-        margin-bottom: 2.5em;
-        margin-right: 2em;
+        min-width: 21.875em; /* 350px equivalent */
+        max-width: 37.5em; /* 600px equivalent */
+        margin-top: 2.5em; /* 40px equivalent */
+        margin-bottom: 2.5em; /* 40px equivalent */
+        margin-right: 2em; /* 32px equivalent */
     }
 
 /* Footer */
@@ -240,10 +400,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%; 
+        width: 100%;
         box-sizing: border-box;
-        padding: 20px 0; /
-        margin: 0; 
+        padding: 1.25em 0; /* 20px equivalent */
+        margin: 0;
     }
 
     .footer-text {
@@ -251,14 +411,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 40px;
+        padding: 2.5em; /* 40px equivalent */
         text-align: center;
         width: 100%;
         box-sizing: border-box;
     }
 
     .footer-text p {
-        margin: 0px;
+        margin: 0;
     }
 
     .footer-socials {
@@ -268,23 +428,23 @@
         align-items: center; /* Center items vertically */
         width: 100%;
         box-sizing: border-box;
-        padding: 0 20px; /* Add padding for spacing */
+        padding: 0 1.25em; /* 20px equivalent */
     }
 
     .footer-socials h4 {
-        margin: 0; /* Ensure no margin around the heading */
+        margin: 0;
     }
 
     .socials {
         display: flex;
         justify-content: center;
-        align-items: center; /* Ensure the icons are centered vertically */
-        gap: 20px; /* Space between icons */
+        align-items: center;
+        gap: 1.25em; /* 20px equivalent */
     }
 
     .socials i {
         color: #40485E;
-        font-size: 24px;
+        font-size: 1.5em; /* 24px equivalent */
         transition: color 0.3s ease;
     }
 
@@ -296,16 +456,15 @@
 
     hr {
         width: 100%;
-        border: none; /* Remove default border */
-        height: 0.5px; /* Set desired height */
-        background-color: #e2e3e4; /* Set desired color */
-        margin: 20px 0; /* Add some margin for spacing */
+        border: none;
+        height: 0.03125em; /* 0.5px equivalent */
+        background-color: #e2e3e4;
+        margin: 1.25em 0; /* 20px equivalent */
     }
-
 
 /* Images */
 
-    .heroImage, .aboutMe-image {
+    .heroImage {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -313,11 +472,6 @@
 
     img {
         width: 100%;
-        max-width: 500px;
+        max-width: 31.25em; /* 500px equivalent */
         height: auto;
     }
-
-    .image-aboutMe {
-        width: 50%;
-    }
-
