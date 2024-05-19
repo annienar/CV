@@ -124,6 +124,9 @@
         width: 100%;
         box-sizing: border-box;
         background-color: #EBECEE;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
 
     .navBar-nav {
@@ -374,7 +377,7 @@
     .card {
         background-color: white;
         border-radius: 1.5em; /* 24px equivalent */
-        flex: auto;
+        flex: 0 0 auto; /* Prevents the card from growing to fill available space */
         flex-direction: column;
         width: 285px;
         margin: 0;
